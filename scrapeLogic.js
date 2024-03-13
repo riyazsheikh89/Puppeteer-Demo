@@ -17,7 +17,7 @@ const scrapeLogic = async (res) => {
   try {
     const page = await browser.newPage();
 
-    await page.goto("https://www.leetcode.com");
+    await page.goto("https://cuvette.tech/");
     const pdfBuffer = await page.pdf({ format: 'A4', printBackground: true });
 
     // Print the full title
