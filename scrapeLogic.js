@@ -17,10 +17,7 @@ const scrapeLogic = async (res) => {
   try {
     const page = await browser.newPage();
 
-    await page.goto("https://www.binance.com", {
-      waitUntil: "networkidle2",
-    });
-    await page.pdf({ path: "hn.pdf", format: "a4" });
+    await page.goto("https://www.leetcode.com");
     const pdfBuffer = await page.pdf({ format: 'A4', printBackground: true });
 
     // Print the full title
